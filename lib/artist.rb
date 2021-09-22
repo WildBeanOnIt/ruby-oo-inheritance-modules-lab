@@ -1,4 +1,3 @@
-require 'config/environment.rb'
 require 'pry'
 
 class Artist
@@ -15,7 +14,7 @@ class Artist
   @@artists = []
 
   def initialize
-    @@artists << self
+    super
     @songs = []
   end
 

@@ -1,4 +1,3 @@
-require_relative '../lib/concerns/memorable.rb'
 
 module Memorable
     module ClassMethods
@@ -11,7 +10,7 @@ module Memorable
         end
     end
 
-    def InstanceMethods
+    module InstanceMethods
         def initialize
             self.class.all << self
         end

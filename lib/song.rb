@@ -1,4 +1,3 @@
-require 'config/environment.rb'
 require 'pry'
 
 class Song
